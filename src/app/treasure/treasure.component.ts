@@ -8,6 +8,7 @@ import { Treasure } from '../treasure';
 })
 export class TreasureComponent implements OnInit {
 
+  // @ts-ignore
   @Input() treasure: Treasure;
 
   constructor() { }
