@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Treasure } from '../treasure';
-import { treasure } from '../mock-treasures';
+import { TREASURES } from '../mock-treasures';
 
 @Component({
   selector: 'app-treasures',
@@ -10,7 +10,16 @@ import { treasure } from '../mock-treasures';
 })
 export class TreasuresComponent implements OnInit {
 
-  treasure: Treasure = treasure;
+  treasures: Treasure[] = TREASURES;
+  selectedTreasure: Treasure | undefined;
+
+  onSelectTreasure (treasure: Treasure): void {
+    if (this.selectedTreasure?.id !== treasure.id) {
+      this.selectedTreasure = treasure;
+    } else {
+      this.selectedTreasure = undefined;
+    }
+  }
 
   constructor() { }
 

@@ -1,0 +1,17 @@
+<div id="treasure-details" class="container-fluid">
+    <h3>{{treasure.name}} Details</h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <label for="treasure-id">Id</label>
+            <span id="treasure-id">{{treasure.id}}</span>
+        </li>
+        <li class="list-group-item">
+            <label for="treasure-name">Name</label>
+            <input type="text" id="treasure-name" [(ngModel)]="treasure.name" />
+        </li>
+        <li class="list-group-item">
+            <label for="treasure-location">Location</label>
+            <span id="treasure-location">{{treasure.location}}</span>
+        </li>
+    </ul>
+</div>

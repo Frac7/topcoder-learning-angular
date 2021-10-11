@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-header.component.css']
 })
 export class NavbarHeaderComponent implements OnInit {
-  title: string = 'Topcoder Angular Level 2'
+  title: string = 'Topcoder Angular Level 3'
 
   constructor() { }
 
